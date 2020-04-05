@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='skeleton.css') }}">
+    <title></title>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+  </head>
+  <body>
+    <!-- .container is main centered wrapper -->
+    <div class="container">
+        <img id="camera" style="width:100%" src="/video_feed" alt="">
+      <div class="row">
+        <div class="one column"></div>
+        <div class="one column"><button type="button" onclick="sendMove(0)" name="button">Up</button></div>
+        <div class="one column"></div>
+      </div>
+      <div class="row">
+        <div class="one column"><button type="button" onclick="sendMove(2)" name="button">Left</button></div>
+        <div class="one column"></div>
+        <div class="one column"><button type="button" onclick="sendMove(3)" name="button">Right</button></div>
+      </div>
+      <div class="row">
+        <div class="one column"></div>
+        <div class="one column"><button type="button" onclick="sendMove(1)" name="button">Back</button></div>
+        <div class="one column"></div>
+      </div>
+    </div>
+  </body>
+</html>
